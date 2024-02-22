@@ -1,15 +1,15 @@
-/*style.css*/ 
+/*style.css*/
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f7fa;
-    color: #333;
+    background: #007BFF; /* Blue background */
+    color: #ffffff; /* Black text */
 }
 
 a {
-    color: #007bff;
+    color: #FFA500; /* Orange for links */
     text-decoration: none;
 }
 
@@ -23,8 +23,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background: #007bff;
-    color: #fff;
+    background: #0056b3; /* Darker blue for header */
+    color: #ffffff; /* Black text */
 }
 
 .header-content h1 {
@@ -44,8 +44,8 @@ nav ul li {
 }
 
 button, .signup-button {
-    background-color: #ff9800;
-    color: #fff;
+    background-color: #FFA500; /* Orange for buttons */
+    color: #ffffff; /* Black text */
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -54,16 +54,16 @@ button, .signup-button {
 }
 
 button:hover, .signup-button:hover {
-    background-color: #f57c00;
+    background-color: #CC8400; /* Darker shade of orange on hover */
 }
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
-    color: #ffffff;
+    background-image: linear-gradient(45deg, #007BFF 0%, #004C8C 100%); /* Gradient from blue to darker blue */
+    color: #ffffff; /* White text for contrast */
     text-align: center;
     padding: 100px 20px;
-    border-bottom: 5px solid #ff9800;
+    border-bottom: 5px solid #FFA500; /* Orange border */
 }
 
 .hero h2 {
@@ -88,17 +88,19 @@ button:hover, .signup-button:hover {
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px 20px;
+    background: #0066cc; /* Slightly different blue for separation */
 }
 
 .feature {
     width: 300px;
-    background: #ffffff;
+    background: #0056b3; /* Darker blue for feature cards */
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Shadow for depth */
     text-align: center;
     transition: all 0.3s ease;
+    color: #ffffff; /* Black text */
 }
 
 .feature:hover {
@@ -109,33 +111,28 @@ button:hover, .signup-button:hover {
 .feature i {
     font-size: 3em;
     margin-bottom: 15px;
-    color: #007bff;
+    color: #FFA500; /* Orange for icons */
 }
 
 /* How It Works Section */
 .how-it-works {
-    background: #ffffff;
+    background: #0066cc; /* Slightly different blue for separation */
     padding: 50px 20px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: #ffffff; /* Black text */
 }
 
-.steps {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.step {
+.steps .step {
     width: 30%;
     margin: 10px 0;
     text-align: center;
 }
 
 .step-number {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #FFA500; /* Orange for step numbers */
+    color: #ffffff; /* Black for number text */
     width: 50px;
     height: 50px;
     display: flex;
@@ -146,39 +143,15 @@ button:hover, .signup-button:hover {
     font-size: 1.5em;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer nav ul {
-    justify-content: center;
-}
-
-footer nav ul li {
-    margin: 0 15px;
-}
-
-.social-media i {
-    margin: 0 10px;
-    font-size: 1.5em;
-    transition: transform 0.3s ease;
-}
-
-.social-media i:hover {
-    transform: scale(1.2);
-}
-
+/* System Requirements Section */
 .system-requirements {
-    background: #ffffff;
+    background: #0066cc; /* Slightly different blue for separation */
     padding: 50px 20px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: center;
+    color: #ffffff; /* Black text */
 }
 
 .requirements {
@@ -193,6 +166,43 @@ footer nav ul li {
 }
 
 .requirement i {
-    color: #007bff; /* Icon color */
+    color: #FFA500; /* Orange for icons */
     margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #004C8C; /* Darker blue for footer */
+    color: #ffffff; /* Black text */
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: #ffffff; /* White for footer links */
+}
+
+footer nav ul li a:hover {
+    color: #FFA500; /* Orange for hover state */
+    text-decoration: underline;
+}
+
+.social-media i {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #ffffff; /* Orange for social media icons */
+    transition: transform 0.3s ease;
+}
+
+.social-media i:hover {
+    transform: scale(1.2);
+    color: #FFA500; /* Orange for hover state */
 }
