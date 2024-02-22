@@ -1,0 +1,109 @@
+<!--landingPage.html-->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Chatbot - OTEK 2.0</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="company-name">OTEK 2.0</h1>
+            <nav>
+                <ul>
+                    <li><button onclick="return false;">Chatbot</button></li>
+                    <li><button onclick="return false;">About Us</button></li>
+                    <li><button onclick="return false;">Contact</button></li>
+                    <li><button class="signup-button" onclick="return false;">Sign Up</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Products Seamlessly</h2>
+        <p>Our AI-powered shopping assistant makes finding the perfect product easy and fun.</p>
+        <button class="cta-button">Try It Now</button>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-user-cog fa-3x"></i> <!-- Font Awesome Icon -->
+            <h3>Personalized Recommendations</h3>
+            <p>Get suggestions tailored to your tastes and preferences.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-balance-scale fa-3x"></i> <!-- Font Awesome Icon -->
+            <h3>Comparison Tools</h3>
+            <p>Easily compare products to find the best fit for your needs.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-fire fa-3x"></i> <!-- Font Awesome Icon -->
+            <h3>Trending Items</h3>
+            <p>Discover what's popular and trending in the shopping world.</p>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <p>Start a conversation with the chatbot about what you're looking for.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <p>Answer a few questions to help the bot understand your preferences.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <p>Receive personalized product recommendations instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="system-requirements">
+        <h2>System Requirements</h2>
+        <div class="requirements">
+            <div class="requirement">
+                <i class="fas fa-desktop fa-2x"></i> <!-- Font Awesome Icon for Desktop -->
+                <h3>Compatible Browsers</h3>
+                <p>Chrome, Firefox, Safari, Edge</p>
+            </div>
+            <div class="requirement">
+                <i class="fas fa-mobile-alt fa-2x"></i> <!-- Font Awesome Icon for Mobile -->
+                <h3>Mobile Friendly</h3>
+                <p>Optimized for Android and iOS devices</p>
+            </div>
+            <div class="requirement">
+                <i class="fas fa-network-wired fa-2x"></i> <!-- Font Awesome Icon for Network -->
+                <h3>Internet Connection</h3>
+                <p>Minimum 5 Mbps for seamless experience</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <!-- Social media links/icons go here -->
+            <i class="fab fa-facebook-f"></i> <!-- Example social media icon -->
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
+</body>
+</html>
