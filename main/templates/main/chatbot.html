@@ -1,0 +1,45 @@
+<!-- chatbot.html -->
+
+{% load static %}
+{% include 'main/header.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - OTEK 2.0</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="chatbot-wrapper">
+        <aside class="chat-sidebar">
+            <div class="sidebar-header">
+                <h3>Chat Sessions</h3>
+                <button class="btn-new-session">+ New Session</button>
+            </div>
+            <ul class="session-list" id="session-list">
+                <!-- Dynamically generated list of chat sessions will be added here -->
+            </ul>
+        </aside>
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <h2>OTEK 2.0 Assistant</h2>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <!-- Dynamic chat content will go here -->
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Type your message here..." />
+                <button class="btn-icon" id="btn-send-image"><i class="far fa-image"></i></button>
+                <button class="btn-send" id="btn-send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/chatbot.js' %}"></script>
+</body>
+</html>

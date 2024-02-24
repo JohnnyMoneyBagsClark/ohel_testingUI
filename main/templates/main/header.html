@@ -1,0 +1,18 @@
+<!-- header.html -->
+
+{% load static %}
+<header>
+    <div class="header-content">
+        <!-- Wrap the text with an anchor tag linking to the home ('landing_page' url name) -->
+        <h1 class="company-name"><a href="{% url 'landing_page' %}" class="home-button">OTEK 2.0</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'chatbot' %}" class="chatbot-button">Chatbot</a></li>
+                <li><a href="{% url 'about_us' %}" class="about-us-button">About Us</a></li>
+                <li><a href="{% url 'contact' %}" class="contact-button">Contact</a></li>
+                <li><a href="{% url 'signup' %}" class="signup-button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+

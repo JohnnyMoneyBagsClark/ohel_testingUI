@@ -1,6 +1,7 @@
 <!--landingPage.html-->
 
 {% load static %}
+{% include 'main/header.html' %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,24 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1 class="company-name">OTEK 2.0</h1>
-            <nav>
-                <ul>
-                    <li><button onclick="return false;">Chatbot</button></li>
-                    <li><button onclick="return false;">About Us</button></li>
-                    <li><button onclick="return false;">Contact</button></li>
-                    <li><button class="signup-button" onclick="return false;">Sign Up</button></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
     <section class="hero">
-        <h2>Discover Products Seamlessly</h2>
+        <h2>Personalized Chatbot For You!</h2>
         <p>Our AI-powered shopping assistant makes finding the perfect product easy and fun.</p>
-        <button class="cta-button">Try It Now</button>
+        <a href="{% url 'download' %}" class="cta-button">Download Now!</a>
     </section>
 
     <section class="features">
