@@ -4,12 +4,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #007BFF; /* Blue background */
-    color: #ffffff; /* Black text */
+    background: #000000; /* Blue background */
+    color: #000000; /* Black text */
 }
 
 a {
-    color: #FFA500; /* Orange for links */
+    color: #000000; /* Orange for links */
     text-decoration: none;
 }
 
@@ -23,13 +23,13 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background: #0056b3; /* Darker blue for header */
-    color: #ffffff; /* Black text */
+    background: #004C8C; /* Darker blue for header */
+    color: #020101; /* Black text */
 }
 
 .header-content h1 {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 
 nav ul {
@@ -44,8 +44,8 @@ nav ul li {
 }
 
 button, .signup-button {
-    background-color: #FFA500; /* Orange for buttons */
-    color: #ffffff; /* Black text */
+    background-color: #1e85a2; 
+    color: #000000; 
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -54,7 +54,7 @@ button, .signup-button {
 }
 
 button:hover, .signup-button:hover {
-    background-color: #CC8400; /* Darker shade of orange on hover */
+    background-color: #000000; /* Darker shade of orange on hover */
 }
 
 /* Hero Section */
@@ -63,7 +63,7 @@ button:hover, .signup-button:hover {
     color: #ffffff; /* White text for contrast */
     text-align: center;
     padding: 100px 20px;
-    border-bottom: 5px solid #FFA500; /* Orange border */
+    border-bottom: 5px solid #1f50a0; 
 }
 
 .hero h2 {
@@ -111,7 +111,7 @@ button:hover, .signup-button:hover {
 .feature i {
     font-size: 3em;
     margin-bottom: 15px;
-    color: #FFA500; /* Orange for icons */
+    color: #ffffff; /* Orange for icons */
 }
 
 /* How It Works Section */
@@ -156,7 +156,7 @@ button:hover, .signup-button:hover {
 }
 
 .step-number {
-    background-color: #FFA500; /* Orange for step numbers */
+    background-color: #00337a; /* Orange for step numbers */
     color: #ffffff; /* White for number text */
     width: 50px;
     height: 50px;
@@ -191,7 +191,7 @@ button:hover, .signup-button:hover {
 }
 
 .requirement i {
-    color: #FFA500; /* Orange for icons */
+    color: #000000; /* Orange for icons */
     margin-bottom: 15px;
 }
 
@@ -216,7 +216,7 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover {
-    color: #FFA500; /* Orange for hover state */
+    color: #0241ff; /* Orange for hover state */
     text-decoration: underline;
 }
 
@@ -229,7 +229,7 @@ footer nav ul li a:hover {
 
 .social-media i:hover {
     transform: scale(1.2);
-    color: #FFA500; /* Orange for hover state */
+    color: #0b44ff; /* Orange for hover state */
 }
 
 .home-link {
@@ -251,7 +251,7 @@ footer nav ul li a:hover {
 
 /* Header links styling */
 nav ul li a {
-    background-color: #FFA500; /* Orange background for all header links */
+    background-color: #000000; /* Orange background for all header links */
     color: #ffffff; /* White text */
     padding: 10px 20px; /* Padding to make the links look like buttons */
     border-radius: 20px; /* Rounded corners */
@@ -263,7 +263,7 @@ nav ul li a {
 
 /* Header links hover effect */
 nav ul li a:hover {
-    background-color: #CC8400; /* Darker shade of orange on hover */
+    background-color: #000000; /* Darker shade of orange on hover */
     text-decoration: none; /* Ensure the underline doesn't appear on hover */
 }
 
@@ -286,7 +286,7 @@ nav ul li a:hover {
 
 /* Style for other header navigation links */
 nav ul li a:not(.home-link) {
-    background-color: #FFA500; /* Orange background */
+    background-color: #004C8C; /*Header button colors!*/
     color: #ffffff; /* White text */
     padding: 10px 20px; /* Padding for the button-like appearance */
     border-radius: 20px; /* Rounded corners */
@@ -298,12 +298,12 @@ nav ul li a:not(.home-link) {
 
 /* Hover effect for other header navigation links */
 nav ul li a:not(.home-link):hover {
-    background-color: #CC8400; /* Darker shade of orange on hover */
+    background-color: #000000; 
     text-decoration: none; /* No underline on hover */
 }
 
 .cta-button {
-    background-color: #FFA500; /* Orange background to match other buttons */
+    background-color: #00c3ff; /* Orange background to match other buttons */
     color: #ffffff; /* White text */
     border: none; /* No border for a flat design */
     padding: 10px 20px; /* Padding for size */
@@ -318,7 +318,7 @@ nav ul li a:not(.home-link):hover {
 
 /* Call-To-Action Button Hover Effect */
 .cta-button:hover {
-    background-color: #CC8400; /* Darker shade of orange on hover to match other buttons */
+    background-color: #1b5d94; /* Darker shade of orange on hover to match other buttons */
     text-decoration: none; /* Ensures that no underline appears on hover */
 }
 
