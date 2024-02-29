@@ -4,8 +4,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #000000; /* Blue background */
-    color: #000000; /* Black text */
+    background: #004C8C; /* Blue background */
+    color: #ffffff; /* Black text */
 }
 
 a {
@@ -24,7 +24,7 @@ a:hover {
     align-items: center;
     padding: 20px 40px;
     background: #004C8C; /* Darker blue for header */
-    color: #020101; /* Black text */
+    color: #ffffff; /* Black text */
 }
 
 .header-content h1 {
@@ -54,7 +54,7 @@ button, .signup-button {
 }
 
 button:hover, .signup-button:hover {
-    background-color: #000000; /* Darker shade of orange on hover */
+    background-color: #3069af; /* Darker shade of orange on hover */
 }
 
 /* Hero Section */
@@ -81,6 +81,29 @@ button:hover, .signup-button:hover {
     font-size: 1.2em;
     margin-top: 20px;
 }
+
+/* HOVER EFFECT LANDING PAGE */
+
+/* Initial state completely obscured or very small */
+.section-collapse {
+    overflow: hidden;
+    height: 0; /* Set to 0 or a small enough value to hide content */
+    transition: height 1s ease; /* Increased duration to 1s for a slower transition */
+    /* You might want to add padding-top and padding-bottom transitions if they are affecting the view */
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: height 1s ease, padding-top 1s ease, padding-bottom 1s ease;
+}
+
+/* Expanded state with a larger height */
+.section-expand {
+    height: 300px; /* Set a fixed height or 'auto' if you want it to depend on the content size */
+    padding-top: 50px; /* Original padding value */
+    padding-bottom: 50px; /* Original padding value */
+    /* If you use 'auto', ensure there is a max-height set to enable transition */
+    max-height: 1000px; /* Adjust as needed */
+}
+
 
 /* Features Section */
 .features {
@@ -122,6 +145,47 @@ button:hover, .signup-button:hover {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     color: #ffffff; /* White text */
+
+    position: relative; 
+    overflow: hidden; 
+    transition: all 1s ease;
+}
+
+/* Initially hide the content of the section */
+.how-it-works .steps, .how-it-works h2 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* On hover, reveal the content */
+.how-it-works:hover .steps, .how-it-works:hover h2 {
+    opacity: 1;
+}
+
+.overlay-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* White text for contrast */
+    font-size: 24px; /* Large font size for visibility */
+    font-weight: bold; /* Bold text */
+    visibility: visible;
+    z-index: 10; /* Ensure the title is above other content */
+}
+
+/* Hide the title on hover and show the section contents */
+.how-it-works:hover .overlay-title {
+    visibility: hidden;
+}
+
+.overlay-title {
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.how-it-works:hover .overlay-title {
+    opacity: 0;
 }
 
 .how-it-works-container {
@@ -177,6 +241,40 @@ button:hover, .signup-button:hover {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: center;
     color: #ffffff; /* Black text */
+
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+/* Initially hide the content of the section */
+.system-requirements .requirements, .system-requirements h2 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* On hover, reveal the content */
+.system-requirements:hover .requirements, .system-requirements:hover h2 {
+    opacity: 1;
+}
+
+.overlay-title-system-requirements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    visibility: visible;
+    z-index: 10;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.system-requirements:hover .overlay-title-system-requirements {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .requirements {
@@ -197,8 +295,8 @@ button:hover, .signup-button:hover {
 
 /* Footer */
 footer {
-    background-color: #004C8C; /* Darker blue for footer */
-    color: #ffffff; /* Black text */
+    background-color: #004C8C; 
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -212,24 +310,20 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-    color: #ffffff; /* White for footer links */
+    color: #ffffff; 
 }
 
-footer nav ul li a:hover {
-    color: #0241ff; /* Orange for hover state */
-    text-decoration: underline;
-}
 
 .social-media i {
     margin: 0 10px;
     font-size: 1.5em;
-    color: #ffffff; /* Orange for social media icons */
+    color: #ffffff; 
     transition: transform 0.3s ease;
 }
 
 .social-media i:hover {
     transform: scale(1.2);
-    color: #0b44ff; /* Orange for hover state */
+    color: #000000; 
 }
 
 .home-link {
@@ -298,7 +392,7 @@ nav ul li a:not(.home-link) {
 
 /* Hover effect for other header navigation links */
 nav ul li a:not(.home-link):hover {
-    background-color: #000000; 
+    background-color: #143e7e; 
     text-decoration: none; /* No underline on hover */
 }
 
@@ -321,6 +415,10 @@ nav ul li a:not(.home-link):hover {
     background-color: #1b5d94; /* Darker shade of orange on hover to match other buttons */
     text-decoration: none; /* Ensures that no underline appears on hover */
 }
+
+
+
+
 
 /* ////////////CHATBOT STYLES/////////////////////////// */
 
@@ -348,20 +446,20 @@ nav ul li a:not(.home-link):hover {
 }
 
 .btn-new-session {
-    background-color: #007BFF; /* Blue color matching the Send button */
-    color: white; /* Text color */
-    padding: 8px 16px; /* Adjust padding to match thickness */
-    border-radius: 20px; /* Rounded corners like the Send button */
-    font-size: .8em; /* Adjust font size */
-    border: none; /* No border */
+    background-color: #007BFF; 
+    color: white; 
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    font-size: .8em; 
+    border: none; 
     cursor: pointer;
-    transition: background 0.3s ease; /* Smooth transition for hover effect */
-    margin-left: 10px; /* Spacing from the title */
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Optional: add shadow for depth */
+    transition: background 0.3s ease; 
+    margin-left: 10px; 
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); 
 }
 
 .btn-new-session:hover {
-    background-color: #0060c7; /* Slightly darker shade on hover */
+    background-color: #0060c7; 
 }
 
 
@@ -372,7 +470,7 @@ nav ul li a:not(.home-link):hover {
 }
 
 .session-item {
-    background-color: #014289; /* Darker blue for items */
+    background-color: #014289; 
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;

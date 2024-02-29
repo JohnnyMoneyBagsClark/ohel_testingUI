@@ -40,6 +40,7 @@
     </section>
 
     <section class="how-it-works">
+        <div class="overlay-title">How Does It Work?</div>
         <h2>How It Works</h2>
         <div class="steps">
             <div class="step">
@@ -58,6 +59,7 @@
     </section>
 
     <section class="system-requirements">
+        <div class="overlay-title-system-requirements">System Requirements</div>
         <h2>System Requirements</h2>
         <div class="requirements">
             <div class="requirement">
@@ -93,5 +95,28 @@
             <i class="fab fa-instagram"></i>
         </div>
     </footer>
+
+        <!-- Including jQuery from a CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Script for handling hover effect -->
+        <script>
+        $(document).ready(function(){
+            // Initially add 'section-collapse' to the sections
+            $(" .how-it-works, .system-requirements").addClass('section-collapse');
+    
+            // Hover event for the sections
+            $(" .how-it-works, .system-requirements").hover(
+                function() {
+                    // Mouse enters the element, expand it
+                    $(this).removeClass('section-collapse').addClass('section-expand');
+                }, function() {
+                    // Mouse leaves the element, collapse it
+                    $(this).removeClass('section-expand').addClass('section-collapse');
+                }
+            );
+        });
+        </script>
+
 </body>
 </html>
