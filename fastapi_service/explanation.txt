@@ -45,3 +45,5 @@ fastapi_service/
 │       └── ...
 ├── .env  # Environment variables
 └── requirements.txt  # Required Python packages
+
+installed all the proper dependencies: duckduckgo,faunadb,flask ... etc
