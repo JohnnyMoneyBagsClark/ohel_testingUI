@@ -1,10 +1,16 @@
 
 from pathlib import Path
+from dotenv import load_dotenv
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+ENV_PATH = BASE_DIR / 'fastapi_service' / '.env'
+load_dotenv(dotenv_path=ENV_PATH)
+
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'superduperTempsecretkey0001126543')
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/

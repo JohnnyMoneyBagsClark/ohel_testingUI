@@ -1,0 +1,47 @@
+This backend chatbot was initialized using 
+pip install fastapi uvicorn
+as a terminal command. 
+Technologies : FastApi framework 
+
+File structure: 
+
+fastapi_service/
+│
+├── app/  # Main application package
+│   ├── __init__.py  # Initialize the package
+│   ├── main.py  # Main FastAPI application setup and routes
+│   ├── dependencies.py  # Dependencies for FastAPI (e.g., get_db, get_current_user)
+│   ├── api/  # Web APIs
+│   │   ├── __init__.py
+│   │   ├── endpoints/  # Endpoint-specific logic
+│   │   │   ├── __init__.py
+│   │   │   ├── chatbot.py  # Chatbot endpoint logic
+│   │   │   └── ...  # Other endpoints
+│   │   └── schemas/  # Pydantic schemas for request and response data
+│   │       ├── __init__.py
+│   │       ├── chatbot.py  # Schemas for chatbot
+│   │       └── ...
+│   ├── core/  # Core application configurations, security, etc.
+│   │   ├── config.py  # Configuration settings
+│   │   └── ...
+│   ├── db/  # Database-related modules
+│   │   ├── __init__.py
+│   │   ├── base_class.py  # Base class for database models
+│   │   └── ...
+│   ├── models/  # SQLAlchemy models
+│   │   ├── __init__.py
+│   │   ├── chatbot_model.py  # Models related to the chatbot
+│   │   └── ...
+│   ├── services/  # Business logic services
+│   │   ├── __init__.py
+│   │   ├── chatbot_service.py  # Service layer for chatbot
+│   │   ├── faunadb_client.py  # FaunaDB client logic
+│   │   ├── ddg_search.py  # DuckDuckGo search logic
+│   │   ├── elastic_search.py  # Elasticsearch logic
+│   │   └── ...
+│   └── utils/  # Utility functions and helpers
+│       ├── __init__.py
+│       ├── tools.py  # Any additional tools you might need
+│       └── ...
+├── .env  # Environment variables
+└── requirements.txt  # Required Python packages
